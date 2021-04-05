@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <hello-world></hello-world>
+    <navigation></navigation>
+    <slider></slider>
+    <grid-list></grid-list>
+    <FAQs></FAQs>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 
-import HelloWorld from "./components/HelloWorld";
+import Navigation from "./components/Navigation";
+import Slider from "./components/Slider";
+import GridList from "./components/GridList";
+import FAQs from "./components/FAQs";
+import Footer from "./components/Footer";
 
 export default {
   components : {
-    'hello-world': HelloWorld
+    Footer,
+    FAQs,
+    GridList,
+    Slider,
+    Navigation
   }
 }
 </script>
