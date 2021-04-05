@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <navigation></navigation>
-    <slider></slider>
-    <grid-list></grid-list>
+    <Header></Header>
+    <Slider></Slider>
+    <Grid-list></Grid-list>
     <FAQs></FAQs>
     <Footer></Footer>
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 import Slider from "./components/Slider";
 import GridList from "./components/GridList";
 import FAQs from "./components/FAQs";
@@ -22,11 +22,32 @@ export default {
     FAQs,
     GridList,
     Slider,
-    Navigation
+    Header
   }
 }
 </script>
 
 <style>
-
+  .flex-and-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .flex-and-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .uppercasing {
+    text-transform: uppercase;
+  }
 </style>
