@@ -55,6 +55,7 @@ export default {
 .slideshow-container {
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 .my-slides {

@@ -1,6 +1,6 @@
 <template>
  <div>
-
+  <h2 class="center">FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
  </div>
 </template>
 

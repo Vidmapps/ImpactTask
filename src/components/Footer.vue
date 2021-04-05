@@ -1,6 +1,6 @@
 <template>
- <div>
-
+ <div class="footer">
+    <h2 class="center uppercasing">Footer</h2>
  </div>
 </template>
 
@@ -11,5 +11,8 @@ export default {
 </script>
 
 <style scoped>
+.footer {
+  background-color: #f2f2f2;
+}
 
 </style>

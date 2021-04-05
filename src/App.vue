@@ -30,36 +30,48 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #6e6e6e;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #707070;
+}
 
-  .flex-and-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+.flex-and-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
-  .flex-and-space-between {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
+.flex-and-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 
-  .pointer {
-    cursor: pointer;
-  }
+.pointer {
+  cursor: pointer;
+}
 
-  .uppercasing {
-    text-transform: uppercase;
-  }
+.uppercasing {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.content-margin {
+  margin: 0 10%;
+}
+
+.center {
+  text-align: center;
+}
 
 </style>
