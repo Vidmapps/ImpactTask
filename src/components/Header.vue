@@ -22,6 +22,11 @@ export default {
 </script>
 
 <style>
+header {
+  -webkit-box-shadow: 0 6px 8px -8px rgba(0, 0, 0, 1);
+  box-shadow: 0 6px 8px -8px rgba(0, 0, 0, 1);
+}
+
   .header {
     height: 56px;
     margin: 10px 10%;

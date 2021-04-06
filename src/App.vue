@@ -67,7 +67,7 @@ body {
 }
 
 .content-margin {
-  margin: 0 10%;
+  margin: 0 5%;
 }
 
 .center {

@@ -47,10 +47,10 @@ export default {
 
 <style scoped>
 .tab {
-  width: 23%;
+  width: 250px;
 }
 .product-name {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .my-image {
