@@ -13,7 +13,7 @@
             <div class="header-nav-item pointer">Home</div>
             <div class="header-nav-item pointer">Shop</div>
             <div class="header-nav-item pointer">Reviews</div>
-            <div class="pointer">Blog</div>
+            <div class="header-nav-item pointer">Blog</div>
           </div>
         </ul>
       </nav>
@@ -74,7 +74,13 @@ header {
 }
 
 .navigation {
-  margin-left: 10%;
+  margin: 10px 10%;
+}
+
+@media (max-width: 640px) {
+  .navigation {
+    margin: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -115,9 +121,16 @@ header {
 }
 
 .nav-content-block {
-  height: 80px;
-  margin-right: 30px;
-  list-style: none;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .nav-content-block {
+    height: 80px;
+    margin-right: 30px;
+    list-style: none;
+    display: block;
+  }
 }
 
 .nav-content-block:hover .rectangle {

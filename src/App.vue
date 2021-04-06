@@ -78,8 +78,10 @@ body {
   text-align: center;
 }
 
-.mobile-hide {
-  display: none;
+@media (max-width: 640px) {
+  .mobile-hide {
+    display: none;
+  }
 }
 
 </style>
