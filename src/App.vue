@@ -23,12 +23,16 @@ export default {
     GridList,
     Slider,
     Header
-  }
+  },
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0%;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -72,6 +76,10 @@ body {
 
 .center {
   text-align: center;
+}
+
+.mobile-hide {
+  display: none;
 }
 
 </style>

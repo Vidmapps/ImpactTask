@@ -1,49 +1,159 @@
 <template>
   <div>
     <header class="flex-and-space-between">
-      <div class="header flex-and-center">
-        <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo">
+      <div class="header-logo flex-and-center">
+        <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo-img">
       </div>
-      <nav class="flex-and-center uppercasing navigation">
-        <div class="header-nav-item pointer">Home</div>
-        <div class="header-nav-item pointer">Shop</div>
-        <div class="header-nav-item pointer">Reviews</div>
-        <div class="header-nav-item pointer">Blog</div>
+      <nav class="uppercasing flex-and-center navigation">
+        <ul class="nav-content-mobile">
+          <div @click="openNav" class="nav-burger pointer">
+            <img src="https://img.icons8.com/android/24/000000/menu.png" class="nav-burger-img mobile-display"/>
+          </div>
+          <div class="nav-content-menu flex-and-center mobile-hide">
+            <div class="header-nav-item pointer">Home</div>
+            <div class="header-nav-item pointer">Shop</div>
+            <div class="header-nav-item pointer">Reviews</div>
+            <div class="pointer">Blog</div>
+          </div>
+        </ul>
       </nav>
-      <div></div>
     </header>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      isOpenNav: false
+    }
+  },
+  methods: {
+    openNav() {
+      console.log(this.isOpenNav)
+      return this.isOpenNav = !this.isOpenNav;
+    }
+  }
 }
 </script>
 
 <style>
 header {
-  -webkit-box-shadow: 0 6px 8px -8px rgba(0, 0, 0, 1);
-  box-shadow: 0 6px 8px -8px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 1px 8px -4px rgba(0, 0, 0, 1);
+  box-shadow: 0 1px 8px -4px rgba(0, 0, 0, 1);
 }
 
-  .header {
-    height: 56px;
-    margin: 10px 10%;
-  }
+.header-logo {
+  height: 40px;
+  margin: 10px 10%;
+}
 
-  @media (max-width: 640px) {
-    .header {
-      margin: 0;
-    }
-  }
-
+@media (max-width: 640px) {
   .header-logo {
-    width: 80px;
+    margin: 24px 10px 16px;
   }
+}
 
-  .header-nav-item {
-    margin-right: 32px;
+.header-logo-img {
+  width: 80px;
+}
+
+.header-nav-item {
+  margin-right: 32px;
+}
+
+.navigation {
+  margin-left: 10%;
+}
+
+@media (max-width: 640px) {
+  .navigation-active {
+    height: 260px;
+    position: absolute;
+    z-index: 1;
+    width: 104%; /* TODO - check for the other solutions to fix the width */
+    opacity: 1;
   }
+}
+
+.nav-content {
+  padding: 20px 0;
+  margin-block-start: 0;
+}
+
+@media (max-width: 640px) {
+  .nav-content-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.rectangle {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.nav-burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #d2ebfc;
+  margin: 5px;
+}
+
+.nav-content-block {
+  height: 40px;
+  color: #81accd;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.nav-content-block:hover .rectangle {
+  background-color: #d1eafc;
+}
+
+.nav-burger {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .nav-burger {
+    display: unset;
+    margin-right: 18px;
+    margin-top: 10px;
+    order: 2;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    align-items: unset;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-content-menu {
+    padding-top: 21px;
+    width: 100%;
+  }
+}
+
+.fa-times {
+  color: #81accd;
+  font-size: 20px;
+}
+
+.nav-content-hidden-block {
+  height: 42px;
+}
 
 </style>
