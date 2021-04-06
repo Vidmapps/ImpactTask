@@ -53,7 +53,6 @@ export default {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  position: relative;
   margin: auto;
   width: 100%;
 }

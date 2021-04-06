@@ -18,6 +18,7 @@
         </ul>
       </nav>
     </header>
+    <div class="nav-content-block"></div>
   </div>
 </template>
 
@@ -42,6 +43,15 @@ export default {
 header {
   -webkit-box-shadow: 0 1px 8px -4px rgba(0, 0, 0, 1);
   box-shadow: 0 1px 8px -4px rgba(0, 0, 0, 1);
+  position: sticky;
+}
+
+@media (max-width: 640px) {
+  header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+  }
 }
 
 .header-logo {
@@ -105,8 +115,7 @@ header {
 }
 
 .nav-content-block {
-  height: 40px;
-  color: #81accd;
+  height: 80px;
   margin-right: 30px;
   list-style: none;
 }
