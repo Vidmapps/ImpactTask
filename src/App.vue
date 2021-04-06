@@ -79,8 +79,17 @@ body {
 }
 
 @media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
   .mobile-hide {
     display: none;
+  }
+
+  .mobile-display {
+    display: initial;
   }
 }
 
