@@ -1,36 +1,36 @@
 <template>
   <div>
     <div class="slideshow-container">
-      <div class="my-slides fade">
-        <img class="slider-image" src="https://screenshot.click/05-39-4ywuy-eq9v6.png">
+      <div class="my-slides">
+        <img class="slider-image" src="https://screenshot.click/07-55-y3mnx-mq9cc11.png">
       </div>
-      <!--<div class="my-slides fade">
-        <img class="slider-image" src="https://screenshot.click/05-39-4ywuy-eq9v62.png">
+      <div class="my-slides">
+        <img class="slider-image" src="https://screenshot.click/07-55-y3mnx-mq9cc22.png">
       </div>
-      <div class="my-slides fade">
-        <img class="slider-image" src="https://screenshot.click/05-39-4ywuy-eq9v60.png">
-      </div>-->
+      <div class="my-slides">
+        <img class="slider-image" src="https://screenshot.click/07-55-y3mnx-mq9cc33.png">
+      </div>
+      <div class="three-dots">
+        <span class="dot" @click="currentSlide(1)"></span>
+        <span class="dot" @click="currentSlide(2)"></span>
+        <span class="dot" @click="currentSlide(3)"></span>
+      </div>
     </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" @click="currentSlide(1)"></span>
-      <span class="dot" @click="currentSlide(2)"></span>
-      <span class="dot" @click="currentSlide(3)"></span>
-    </div>
+
   </div>
 </template>
 
 <script>
-var slideIndex = 1;
+var slideIndex;
+var slides = document.getElementsByClassName("my-slides");
+var dots = document.getElementsByClassName("dot");
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("my-slides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "block"; // none
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -45,7 +45,7 @@ export default {
     currentSlide(n) {
       showSlides(slideIndex = n);
     }
-  }
+  },
 }
 </script>
 
@@ -55,6 +55,10 @@ export default {
 .slideshow-container {
   margin: auto;
   width: 100%;
+}
+
+.three-dots {
+  text-align: center;
 }
 
 .my-slides {
@@ -80,20 +84,4 @@ export default {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 </style>
