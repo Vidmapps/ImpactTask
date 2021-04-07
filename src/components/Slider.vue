@@ -25,6 +25,11 @@ var slideIndex;
 var slides = document.getElementsByClassName("my-slides");
 var dots = document.getElementsByClassName("dot");
 
+window.onload = function showFirst() {
+  slides[0].style.display = "block";
+  dots[0].className += " active";
+}
+
 function showSlides(n) {
   var i;
   if (n > slides.length) {slideIndex = 1}
