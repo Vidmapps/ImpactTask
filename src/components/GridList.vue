@@ -18,19 +18,19 @@
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div v-show="isShowMore" class="tab">
+        <div class="tab mobile-hide" :style="{ display: showTab }">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div v-show="isShowMore" class="tab">
+        <div class="tab mobile-hide" :style="{ display: showTab }">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div v-show="isShowMore" class="tab">
+        <div class="tab mobile-hide" :style="{ display: showTab }">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div v-show="isShowMore" class="tab">
+        <div class="tab mobile-hide" :style="{ display: showTab }">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
@@ -45,12 +45,14 @@ export default {
   name: "GridList",
   data() {
     return {
-      isShowMore: false
+      isShowMore: false,
+      showTab: ''
     }
   },
   methods: {
     showMore() {
-      this.isShowMore = !this.isShowMore
+      this.isShowMore = !this.isShowMore;
+      this.showTab = 'inline';
     }
   }
 }
@@ -59,9 +61,16 @@ export default {
 <style scoped>
 
 button {
-  margin: 20px;
-  font-size: 16px;
-  opacity: 50%;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  button {
+    display: inline;
+    margin: 20px;
+    font-size: 16px;
+    opacity: 50%;
+  }
 }
 
 .tab {
