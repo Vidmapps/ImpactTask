@@ -1,8 +1,8 @@
 <template>
  <div class="content-margin">
   <h2 class="center">FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
-   <div class="content-margin">
-     <div class="faq-container">
+   <ul>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a1', 'b1', 'c1')">
@@ -12,8 +12,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a2', 'b2', 'c2')">
@@ -23,8 +23,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a3', 'b3', 'c3')">
@@ -34,8 +34,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a4', 'b4', 'c4')">
@@ -45,8 +45,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a5', 'b5', 'c5')">
@@ -56,8 +56,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a6', 'b6', 'c6')">
@@ -67,8 +67,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a7', 'b7', 'c7')">
@@ -78,8 +78,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a7">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a8', 'b8', 'c8')">
@@ -89,8 +89,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a8">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-     <div>
+     </li>
+     <li>
        <div class="faq-dropdown flex-and-space-between">
          <div class="faq-question uppercasing">Lorem Ipsum has been the industry's standard</div>
          <div class="faq-toggle pointer" @click="showElement('a9', 'b9', 'c9')">
@@ -100,8 +100,8 @@
        </div>
        <hr>
        <div class="faq-answer" style="display: none" id="a9">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-     </div>
-   </div>
+     </li>
+   </ul>
   </div>
 </template>
 
@@ -142,8 +142,8 @@ h2 {
   margin: 60px 0 30px;
 }
 
-.faq-container {
-  margin: 15px 0;
+li {
+  list-style: none;
 }
 
 .faq-dropdown {
@@ -160,7 +160,7 @@ h2 {
 }
 
 .faq-toggle {
-  margin: inherit;
-}
+  margin: 5px;
+  align-self: center;}
 
 </style>
