@@ -1,6 +1,35 @@
 <template>
   <div>
-    <header>
+    <header v-show="!isOpenNav" style="background-color: white">
+      <div class="flex-and-space-between">
+        <div class="header-logo flex-and-center">
+          <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo-img">
+        </div>
+        <nav class="uppercasing flex-and-center navigation">
+          <ul class="nav-content-mobile">
+            <div @click="openNav" class="nav-burger pointer">
+              <img v-show="!isOpenNav" src="https://screenshot.click/06-42-x94oc-0s9ro.png" class="nav-burger-img mobile-display"/>
+              <img v-show="isOpenNav" src="https://screenshot.click/06-43-hhza0-p6qhj.png" class="nav-burger-img mobile-display"/>
+            </div>
+            <div class="nav-content-menu flex-and-center mobile-hide">
+              <div class="header-nav-item pointer">Home</div>
+              <div class="header-nav-item pointer">Shop</div>
+              <div class="header-nav-item pointer">Reviews</div>
+              <div class="header-nav-item pointer">Blog</div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div v-show="isOpenNav" class="nav-content-dropdown">
+        <div v-show="isOpenNav" class="nav-content-menu center uppercasing">
+          <div class="header-nav-item pointer">Home</div>
+          <div class="header-nav-item pointer">Shop</div>
+          <div class="header-nav-item pointer">Reviews</div>
+          <div class="header-nav-item pointer">Blog</div>
+        </div>
+      </div>
+    </header>
+    <header v-show="isOpenNav">
       <div class="flex-and-space-between">
         <div class="header-logo flex-and-center">
           <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo-img">
@@ -189,11 +218,6 @@ header {
     padding-top: 21px;
     width: 100%;
   }
-}
-
-.fa-times {
-  color: #81accd;
-  font-size: 20px;
 }
 
 .nav-content-hidden-block {

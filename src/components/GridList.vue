@@ -18,22 +18,23 @@
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div class="tab">
+        <div v-show="isShowMore" class="tab">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div class="tab">
+        <div v-show="isShowMore" class="tab">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div class="tab">
+        <div v-show="isShowMore" class="tab">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
-        <div class="tab">
+        <div v-show="isShowMore" class="tab">
           <img class="my-image" src="https://screenshot.click/05-31-7qqpn-e7cfa.png">
           <div class="uppercasing product-name center">Product name</div>
         </div>
+        <button v-show="!isShowMore" @click="showMore">show more...</button>
       </div>
     </div>
   </div>
@@ -41,11 +42,28 @@
 
 <script>
 export default {
-  name: "GridList"
+  name: "GridList",
+  data() {
+    return {
+      isShowMore: false
+    }
+  },
+  methods: {
+    showMore() {
+      this.isShowMore = !this.isShowMore
+    }
+  }
 }
 </script>
 
 <style scoped>
+
+button {
+  margin: 20px;
+  font-size: 16px;
+  opacity: 50%;
+}
+
 .tab {
   width: 250px;
 }

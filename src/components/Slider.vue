@@ -89,4 +89,11 @@ export default {
   background-color: #717171;
 }
 
+@media (max-width: 640px) {
+  .slider-image {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
 </style>

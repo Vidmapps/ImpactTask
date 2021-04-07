@@ -37,7 +37,7 @@ export default {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  color: #707070;
+  color: #2f2f2f;
 }
 
 .flex-and-center {
@@ -68,6 +68,7 @@ body {
 
 .wrapper {
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .content-margin {
