@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header v-show="!isOpenNav" style="background-color: white">
-      <div class="flex-and-space-between">
+    <header v-show="!isOpenNav">
+      <div class="header-top flex-and-space-between">
         <div class="header-logo flex-and-center">
           <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo-img">
         </div>
@@ -30,7 +30,7 @@
       </div>
     </header>
     <header v-show="isOpenNav">
-      <div class="flex-and-space-between">
+      <div class="header-top flex-and-space-between">
         <div class="header-logo flex-and-center">
           <img src="https://screenshot.click/05-45-0ikmf-tru0s.png" class="header-logo-img">
         </div>
@@ -92,6 +92,10 @@ header {
     background-color: rgba(255,255,255,0.5);
     width: 100%;
   }
+}
+
+.header-top {
+  background-color: white;
 }
 
 .header-logo {
