@@ -58,12 +58,13 @@ export default {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  margin: auto;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .three-dots {
   text-align: center;
+  margin-top: -40px;
 }
 
 .my-slides {
