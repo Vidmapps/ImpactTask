@@ -8,8 +8,8 @@
         <nav class="uppercasing flex-and-center navigation">
           <ul class="nav-content-mobile">
             <div @click="openNav" class="nav-burger pointer">
-              <img v-show="!isOpenNav" src="https://screenshot.click/06-42-x94oc-0s9ro.png" class="nav-burger-img mobile-display"/>
-              <img v-show="isOpenNav" src="https://screenshot.click/06-43-hhza0-p6qhj.png" class="nav-burger-img mobile-display"/>
+              <img v-show="!isOpenNav" src="../assets/menu_black_24dp.svg" class="nav-burger-img mobile-display"/>
+              <img v-show="isOpenNav" src="../assets/close_black_24dp.svg" class="nav-burger-img mobile-display"/>
             </div>
             <div class="nav-content-menu flex-and-center mobile-hide">
               <div class="header-nav-item pointer">Home</div>
@@ -37,8 +37,8 @@
         <nav class="uppercasing flex-and-center navigation">
           <ul class="nav-content-mobile">
             <div @click="openNav" class="nav-burger pointer">
-              <img v-show="!isOpenNav" src="https://screenshot.click/06-42-x94oc-0s9ro.png" class="nav-burger-img mobile-display"/>
-              <img v-show="isOpenNav" src="https://screenshot.click/06-43-hhza0-p6qhj.png" class="nav-burger-img mobile-display"/>
+              <img v-show="!isOpenNav" src="../assets/menu_black_24dp.svg" class="nav-burger-img mobile-display"/>
+              <img v-show="isOpenNav" src="../assets/close_black_24dp.svg" class="nav-burger-img mobile-display"/>
             </div>
             <div class="nav-content-menu flex-and-center mobile-hide">
               <div class="header-nav-item pointer">Home</div>
@@ -89,7 +89,7 @@ header {
 @media (max-width: 640px) {
   header {
     position: fixed;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     width: 100%;
   }
 }
@@ -139,40 +139,10 @@ header {
 }
 
 @media (max-width: 640px) {
-  .navigation-active {
-    height: 260px;
-    position: absolute;
-    z-index: 1;
-    width: 104%; /* TODO - check for the other solutions to fix the width */
-    opacity: 1;
-  }
-}
-
-.nav-content {
-  padding: 20px 0;
-  margin-block-start: 0;
-}
-
-@media (max-width: 640px) {
   .nav-content-mobile {
     display: flex;
     justify-content: flex-end;
   }
-}
-
-.rectangle {
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  margin-top: 18px;
-  justify-content: center;
-}
-
-.nav-burger .line {
-  width: 25px;
-  height: 3px;
-  background-color: #d2ebfc;
-  margin: 5px;
 }
 
 .nav-content-block {
@@ -188,10 +158,6 @@ header {
   }
 }
 
-.nav-content-block:hover .rectangle {
-  background-color: #d1eafc;
-}
-
 .nav-burger {
   display: none;
 }
@@ -205,27 +171,11 @@ header {
   }
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 640px) {
-  .nav-links {
-    align-items: unset;
-  }
-}
-
 @media (max-width: 640px) {
   .nav-content-menu {
     padding-top: 21px;
     width: 100%;
   }
-}
-
-.nav-content-hidden-block {
-  height: 42px;
 }
 
 </style>
