@@ -76,6 +76,7 @@ button {
 .tab {
   width: 250px;
 }
+
 .product-name {
   font-size: 16px;
 }

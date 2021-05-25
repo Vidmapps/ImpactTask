@@ -16,7 +16,6 @@
         <span class="dot" @click="currentSlide(3)"></span>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -71,8 +70,14 @@ export default {
   display: none;
 }
 
+@keyframes slide {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
 .slider-image {
   width: 100%;
+  animation: slide 1s ease-in;
 }
 
 .dot {
