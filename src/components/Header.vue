@@ -22,10 +22,10 @@
       </div>
       <div v-show="isOpenNav" class="nav-content-dropdown">
         <div v-show="isOpenNav" class="nav-content-menu center uppercasing">
-          <div class="header-nav-item pointer">Home</div>
-          <div class="header-nav-item pointer">Shop</div>
-          <div class="header-nav-item pointer">Reviews</div>
-          <div class="header-nav-item pointer">Blog</div>
+          <div class="header-nav-item">Home</div>
+          <div class="header-nav-item">Shop</div>
+          <div class="header-nav-item">Reviews</div>
+          <div class="header-nav-item">Blog</div>
         </div>
       </div>
     </header>
@@ -36,25 +36,25 @@
         </div>
         <nav class="uppercasing flex-and-center navigation">
           <ul class="nav-content-mobile">
-            <div @click="openNav" class="nav-burger pointer">
+            <div @click="openNav" class="nav-burger">
               <img v-show="!isOpenNav" src="../assets/menu_black_24dp.svg" class="nav-burger-img mobile-display"/>
               <img v-show="isOpenNav" src="../assets/close_black_24dp.svg" class="nav-burger-img mobile-display"/>
             </div>
             <div class="nav-content-menu flex-and-center mobile-hide">
-              <div class="header-nav-item pointer">Home</div>
-              <div class="header-nav-item pointer">Shop</div>
-              <div class="header-nav-item pointer">Reviews</div>
-              <div class="header-nav-item pointer">Blog</div>
+              <div class="header-nav-item">Home</div>
+              <div class="header-nav-item">Shop</div>
+              <div class="header-nav-item">Reviews</div>
+              <div class="header-nav-item">Blog</div>
             </div>
           </ul>
         </nav>
       </div>
       <div v-show="isOpenNav" class="nav-content-dropdown">
         <div v-show="isOpenNav" class="nav-content-menu center uppercasing">
-          <div class="header-nav-item pointer">Home</div>
-          <div class="header-nav-item pointer">Shop</div>
-          <div class="header-nav-item pointer">Reviews</div>
-          <div class="header-nav-item pointer">Blog</div>
+          <div class="header-nav-item">Home</div>
+          <div class="header-nav-item">Shop</div>
+          <div class="header-nav-item">Reviews</div>
+          <div class="header-nav-item">Blog</div>
         </div>
       </div>
     </header>

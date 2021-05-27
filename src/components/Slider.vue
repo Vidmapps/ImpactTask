@@ -57,7 +57,6 @@ export default {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  width: 100%;
   margin-bottom: 40px;
 }
 
