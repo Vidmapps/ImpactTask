@@ -1,24 +1,24 @@
-# untitled1
+# Vanilla-js-poker website
 
-## Project setup
-```
-npm install
-```
+![app-screen](https://user-images.githubusercontent.com/58663418/133879968-74bcd71c-a7aa-4770-ad7b-4d155ed90986.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## About The Project
 
-### Lints and fixes files
-```
-npm run lint
-```
+The template for a simple website.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Installation
+
+* npm install
+* npm run serve
+
+### Built With
+
+* JavaScript
+* Vue.js 4
+* Bootstrap 5
+
+
+
+
+
