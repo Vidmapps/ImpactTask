@@ -17,6 +17,7 @@ The template for a simple website.
 * JavaScript
 * Vue.js 4
 * Bootstrap 5
+* Google fonts
 
 
 
