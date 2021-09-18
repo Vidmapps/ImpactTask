@@ -1,4 +1,4 @@
-# Vanilla-js-poker website
+# Website template
 
 ![app-screen](https://user-images.githubusercontent.com/58663418/133879968-74bcd71c-a7aa-4770-ad7b-4d155ed90986.png)
 
